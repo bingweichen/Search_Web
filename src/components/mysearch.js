@@ -9,6 +9,7 @@ import 'whatwg-fetch';
 import 'es6-promise/dist/es6-promise.min.js';
 import 'fetch-ie8/fetch.js';
 
+var test;
 
 function sortJSON(data, key, way) {
   return data.sort(function(a, b) {
@@ -71,9 +72,9 @@ class CommentBox extends React.Component{
     if(!this.state.search_information) {
       this.state.search_information="*:*";
     }
-    
+
     Global.search_query=this.state.search_information;
-    
+
     var url=this.state.url_1+this.state.search_information+this.state.url_2;
     console.log("url: ");
     console.log(url);
