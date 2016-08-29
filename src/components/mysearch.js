@@ -10,6 +10,7 @@ import 'es6-promise/dist/es6-promise.min.js';
 import 'fetch-ie8/fetch.js';
 
 var test;
+var test1;
 
 function sortJSON(data, key, way) {
   return data.sort(function(a, b) {
