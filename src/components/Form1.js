@@ -98,17 +98,17 @@ var BasicDemo = React.createClass({
       <Form horizontal form={this.props.form}>
         <FormItem
           {...formItemLayout}
-          label="搜索"
+          label="Search query"
           hasFeedback
           help={isFieldValidating('id') ? '校验中...' : (getFieldError('name') || []).join(', ')}
         >
-          <Input {...getFieldProps('id',therule)} placeholder="可以输入搜索内容或 id:(1 2 3)" />
+          <Input {...getFieldProps('id',therule)} placeholder="Enter search query or id:(1 2 3)" />
         </FormItem>
 
         <FormItem wrapperCol={{ span: 12, offset: 7 }}>
-          <Button type="primary" onClick={this.handleSubmit}>确定</Button>
+          <Button type="primary" onClick={this.handleSubmit}>Search</Button>
           &nbsp;&nbsp;&nbsp;
-          <Button type="ghost" onClick={this.handleReset}>重置</Button>
+          <Button type="ghost" onClick={this.handleReset}>replace</Button>
         </FormItem>
       </Form>
     );

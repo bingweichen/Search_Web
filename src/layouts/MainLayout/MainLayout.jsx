@@ -6,14 +6,18 @@ const MainLayout = ({ children }) => {
   return (
     <div className={styles.normal}>
       <div className={styles.head}>
-        <h1>Search system</h1>
+        <h1>Scientific Survey Auto Creation - Search System</h1>
       </div>
       <div className={styles.content}>
         <div className={styles.side}>
           <h2>Route: </h2>
           <Link to="/">Search</Link><br />
-          <Link to="/graph">Graph</Link><br />
-          <Link to="/testd3">testd3</Link><br />
+          <br />
+
+          <Link to="/graph">Citation Graph</Link><br />
+          <br />
+
+          <Link to="/testd3">Coherence Graph</Link><br />
 
         </div>
         <div className={styles.main}>

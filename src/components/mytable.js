@@ -193,7 +193,7 @@ const App = React.createClass({
           <Button type="primary" onClick={this.start}
                   disabled={!hasSelected} loading={loading}
           >Select</Button>
-          <span style={{ marginLeft: 8 }}>{hasSelected ? `选择了 ${selectedRowKeys.length} 个对象` : ''}</span>
+          <span style={{ marginLeft: 8 }}>{hasSelected ? `choose ${selectedRowKeys.length} objects` : ''}</span>
         </div>
         <Table rowSelection={rowSelection} columns={columns} dataSource={data} />
       </div>
