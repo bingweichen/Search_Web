@@ -2,8 +2,8 @@ import { Table, Button, Popover,Radio } from 'antd';
 import React, { Component, PropTypes } from 'react';
 import Global from "../Global";
 
-import Node from "/Users/chen/project_run/test/json/file1.json";
-import Edge from "/Users/chen/project_run/test/json/file2.json";
+// import Node from "/Users/chen/project_run/test/json/file1.json";
+// import Edge from "/Users/chen/project_run/test/json/file2.json";
 
 
 const RadioButton = Radio.Button;
